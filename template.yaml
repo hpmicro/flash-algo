@@ -7,14 +7,14 @@ variants:
         core_access_options: !Riscv {}
     memory_map:
       - !Ram
-        name: ILM
+        name: ILM0
         range:
           start: 0x00000000
           end: 0x00020000
         cores:
           - core0
       - !Ram
-        name: DLM
+        name: DLM0
         range:
           start: 0x00080000
           end: 0x000a0000
@@ -50,15 +50,15 @@ flash_algorithms:
     pc_erase_sector: 0x0
     pc_erase_all: 0x0
     data_section_offset: 0x0
-    load_address: 0x40
+    load_address: 0x20 # load from 0x00000000
     flash_properties:
       address_range:
         start: 0x0
         end: 0x0
       page_size: 0x0
       erased_byte_value: 0x0
-      program_page_timeout: 0x0
-      erase_sector_timeout: 0x0
+      program_page_timeout: 100
+      erase_sector_timeout: 6000
       sectors:
         - size: 0x0
           address: 0x0
