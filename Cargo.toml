@@ -10,7 +10,7 @@ flash-algorithm = { version = "0.4.0", default-features = false, features = [
     "erase-chip",
 ] }
 panic-halt = "0.2.0"
-hpm-metapac = { version = "0.0.2", features = [
+hpm-metapac = { version = "0.0.3", features = [
     "hpm5361",
 ], path = "../hpm-data/build/hpm-metapac" }
 # defmt = "0.3.8"
