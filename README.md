@@ -1,4 +1,4 @@
-# Flash Algorithm Template
+# Flash Algorithm for HPMicro's MCUs
 
 This is a flash algorithm template for writing CMSIS-Pack flash algorithms in Rust.
 It can be used to generate new flash algoritms for usage with `probe-rs`.
